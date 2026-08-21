@@ -112,6 +112,9 @@ Admin panel is at `/admin/login.html`.
    deploys via `actions/deploy-pages`. Your site is live at
    `https://yourusername.github.io/your-repo/` (or your custom domain).
 
+Moving to a custom domain? See
+[`CUSTOM_DOMAIN_GUIDE.md`](./CUSTOM_DOMAIN_GUIDE.md).
+
 ## File structure
 ```
 index.html              Home: hero, agent bio, intake form (primary focus),

@@ -26,10 +26,11 @@
   }
 
   h1, h2, h3 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Press Start 2P', 'Fraunces', serif;
     font-weight: 500;
     margin: 0;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
+    line-height: 1.6;
   }
 
   .mono {
@@ -114,9 +115,10 @@
     height: 68px;
   }
   .brand-mark {
-    font-family: 'Fraunces', serif;
-    font-size: 19px;
+    font-family: 'Press Start 2P', 'Fraunces', serif;
+    font-size: 11px;
     font-weight: 500;
+    line-height: 1.6;
   }
   .brand-mark span { color: var(--brass-dark); }
   .nav-links {
@@ -207,8 +209,8 @@
     margin-bottom: 18px;
   }
   .hero h1 {
-    font-size: 48px;
-    line-height: 1.08;
+    font-size: 26px;
+    line-height: 1.6;
     margin-bottom: 22px;
   }
   .hero p.lede {
@@ -225,8 +227,8 @@
     border-top: 1px solid rgba(111,180,204,0.25);
   }
   .hero-stats .stat .num {
-    font-family: 'Fraunces', serif;
-    font-size: 26px;
+    font-family: 'Press Start 2P', 'Fraunces', serif;
+    font-size: 14px;
     color: var(--paper);
   }
   .hero-stats .stat .label {
@@ -255,7 +257,7 @@
     gap: 20px;
     flex-wrap: wrap;
   }
-  .block-head h2 { font-size: 30px; }
+  .block-head h2 { font-size: 18px; }
   .block-head .see-all {
     font-size: 13px;
     font-weight: 600;
@@ -290,8 +292,9 @@
     margin-bottom: 16px;
   }
   .listing-card .price {
-    font-family: 'Fraunces', serif;
-    font-size: 22px;
+    font-family: 'Press Start 2P', 'Fraunces', serif;
+    font-size: 14px;
+    line-height: 1.6;
     margin-bottom: 2px;
   }
   .listing-card .status {
@@ -373,7 +376,7 @@
   }
   .intake-head { max-width: 640px; margin: 0 auto 48px; text-align: center; }
   .intake-head .eyebrow { color: var(--cyan); justify-content: center; display: flex; }
-  .intake-head h2 { font-size: 32px; color: var(--paper); margin-bottom: 14px; }
+  .intake-head h2 { font-size: 18px; color: var(--paper); margin-bottom: 14px; }
   .intake-head p { color: #C4CBD6; font-size: 15px; }
 
   .intake-card {
@@ -483,7 +486,7 @@
   .form-nav .back-link:disabled { visibility: hidden; }
 
   .done-panel { display: none; text-align: center; padding: 20px 0 6px; }
-  .done-panel h3 { font-size: 24px; margin-bottom: 12px; }
+  .done-panel h3 { font-size: 16px; margin-bottom: 12px; }
   .done-panel p { color: var(--ink-soft); font-size: 15px; }
 
   /* ---------- footer ---------- */
@@ -502,11 +505,12 @@
     font-size: 13px;
   }
   footer a { color: #C4CBD6; text-decoration: none; margin-left: 22px; }
+  footer .footer-domain { display: inline-block; margin-top: 4px; font-size: 11px; color: #6B7690; }
 
   @media (max-width: 880px) {
     .hero-grid { grid-template-columns: 1fr; }
     .listings-grid, .test-grid { grid-template-columns: 1fr; }
-    .hero h1 { font-size: 36px; }
+    .hero h1 { font-size: 18px; }
     .intake-card { padding: 30px 22px; }
     .two-col { grid-template-columns: 1fr; }
     .about-grid { grid-template-columns: 1fr; }
@@ -559,7 +563,7 @@
   padding: 20px;
   border-bottom: 1px solid rgba(111,180,204,0.2);
 }
-.admin-sidebar .brand strong { color: #fff; font-family:'Fraunces',serif; font-size:16px; }
+.admin-sidebar .brand strong { color: #fff; font-family:'Press Start 2P','Fraunces',serif; font-size:10px; line-height:1.6; }
 .admin-sidebar .brand div { font-size: 11px; color: var(--cyan); margin-top: 2px; }
 .admin-sidebar .brand .back-to-site {
   display: block;
@@ -599,7 +603,7 @@
   padding: 36px 40px;
   max-width: 900px;
 }
-.admin-main h1 { font-size: 26px; margin-bottom: 24px; }
+.admin-main h1 { font-size: 16px; margin-bottom: 24px; }
 
 .breadcrumb {
   font-family: 'IBM Plex Mono', monospace;
@@ -619,7 +623,7 @@
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
   padding: 18px; text-decoration: none; color: inherit; display: block;
 }
-.stat-card .num { font-family:'Fraunces',serif; font-size: 28px; }
+.stat-card .num { font-family:'Press Start 2P','Fraunces',serif; font-size: 16px; }
 .stat-card .label { font-size: 13px; color: var(--ink-soft); margin-top: 4px; }
 
 .admin-table {
@@ -690,7 +694,7 @@
 .login-card {
   background:#fff; padding: 36px 34px; width: 100%; max-width: 360px;
 }
-.login-card h1 { font-size: 21px; margin-bottom: 4px; }
+.login-card h1 { font-size: 14px; margin-bottom: 12px; }
 .login-card p.sub { color: var(--ink-soft); font-size: 13px; margin-bottom: 22px; }
 
 .error-text { color: #B3392E; font-size: 13px; margin-top: 4px; }
