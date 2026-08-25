@@ -13,18 +13,18 @@ function getEnv(key, defaultValue) {
 export const config = {
   // Agent information (loaded from .env at runtime)
   get agentFirstName() {
-    return getEnv('VITE_AGENT_FIRST_NAME', 'Drew');
+    return getEnv('VITE_AGENT_FIRST_NAME', 'Dream Homes');
   },
   get agentLastName() {
-    return getEnv('VITE_AGENT_LAST_NAME', 'Sharma');
+    return getEnv('VITE_AGENT_LAST_NAME', '');
   },
   get companyName() {
-    return getEnv('VITE_COMPANY_NAME', 'Realty');
+    return getEnv('VITE_COMPANY_NAME', 'with Drew');
   },
 
   // Derived (auto-formatted)
   get agentFullName() {
-    return `${this.agentFirstName} ${this.agentLastName}`;
+    return `${this.agentFirstName} ${this.agentLastName}`.trim();
   },
   get brandName() {
     return `${this.agentFullName} ${this.companyName}`;
@@ -37,7 +37,7 @@ export const config = {
   get serviceAreas() {
     return getEnv('VITE_SERVICE_AREAS', 'Frisco and the surrounding North Texas suburbs');
   },
-  buyerRepresentation: 'buyer representation',
+  brokerageTag: 'Keller Williams, Fresco Star',
 
   // Agent stats (loaded from .env at runtime)
   get yearsInMarket() {

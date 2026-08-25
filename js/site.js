@@ -68,6 +68,22 @@ async function loadFeaturedTestimonials() {
   }
 }
 
+// ---------- Lead email forwarding (FormSubmit, best-effort) ----------
+// Supabase is the source of truth for leads; this is a fire-and-forget copy
+// to dhwd4u@gmail.com so a submission doesn't require checking the admin panel.
+// Note: FormSubmit sends a one-time confirmation email to dhwd4u@gmail.com on
+// the very first lead ever forwarded — it must be clicked to activate forwarding.
+function forwardLeadByEmail(payload) {
+  fetch('https://formsubmit.co/ajax/dhwd4u@gmail.com', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    body: JSON.stringify({
+      _subject: `New buyer lead: ${payload.full_name || 'Unknown'}`,
+      ...payload,
+    }),
+  }).catch((err) => console.warn('Lead email forward failed:', err));
+}
+
 // ---------- Intake form (multi-step + Supabase submit) ----------
 function initIntakeForm() {
   const form = document.getElementById('intakeForm');
@@ -193,6 +209,8 @@ function initIntakeForm() {
         nextBtn.textContent = 'Submit';
         return;
       }
+
+      forwardLeadByEmail(payload);
 
       const firstName = (payload.full_name || '').split(' ')[0];
       const message = firstName

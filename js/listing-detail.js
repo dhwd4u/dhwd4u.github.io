@@ -49,10 +49,10 @@ async function load() {
 
     <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:16px; margin-bottom:8px;">
       <div>
-        <h1 style="font-size:18px; margin-bottom:12px;">${escapeHtml(l.title)}</h1>
+        <h1 style="font-size:30px; margin-bottom:4px;">${escapeHtml(l.title)}</h1>
         <p class="muted">${escapeHtml(addr)}</p>
       </div>
-      <p style="font-size:18px; font-family:'Press Start 2P','Fraunces',serif; color:var(--brass-dark); margin:0; line-height:1.6;">${formatPrice(l.price)}</p>
+      <p style="font-size:30px; font-family:'Fraunces',serif; color:var(--brass-dark); margin:0;">${formatPrice(l.price)}</p>
     </div>
 
     <div style="display:flex; flex-wrap:wrap; gap:20px 28px; padding:24px 0; margin:24px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
@@ -81,7 +81,7 @@ async function load() {
 }
 
 function statBlock(value, label) {
-  return `<div><p style="font-size:13px; font-family:'Press Start 2P','Fraunces',serif; margin:0; line-height:1.6;">${value}</p><p class="muted" style="font-size:13px; margin:8px 0 0;">${label}</p></div>`;
+  return `<div><p style="font-size:22px; font-family:'Fraunces',serif; margin:0;">${value}</p><p class="muted" style="font-size:13px; margin:2px 0 0;">${label}</p></div>`;
 }
 
 load();

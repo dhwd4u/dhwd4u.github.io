@@ -26,9 +26,9 @@ Only `.env.example` (with placeholder values) should be in version control.
 
 ### Agent Information
 ```js
-agentFirstName: 'Your Name'      // Your first name
-agentLastName: 'Your Last Name'  // Your last name
-companyName: 'Your Company'      // Your company name
+agentFirstName: 'Your Name'      // First half of the brand name
+agentLastName: 'Your Last Name'  // Second half of the brand name (leave blank if not needed)
+companyName: 'Your Company'      // Accent-styled suffix shown alongside the name
 ```
 **Derived values** (auto-formatted):
 - `agentFullName` → "Your Name Your Last Name"
@@ -38,7 +38,7 @@ companyName: 'Your Company'      // Your company name
 ```js
 primaryLocation: 'City, State'                 // Main service area
 serviceAreas: 'Your service area description'  // Full description
-buyerRepresentation: 'buyer representation'    // Your focus area
+brokerageTag: 'Brokerage, Team Name'            // Hero eyebrow line
 ```
 
 ### Agent Stats
