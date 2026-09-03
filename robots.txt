@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://husig.ai/ds/sitemap.xml
+Sitemap: https://dhwd4u.com/sitemap.xml
